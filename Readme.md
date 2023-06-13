@@ -6,7 +6,7 @@
 *Benefits*:
 1. React does client side rendering while Next.js does server side rendering. Next.js also has options in which we can control on either client side or server side rendering.
 
-2. Client-side rendering happens on client's browser. When a user request a webpage to the server. the server sends the html,css and JS of the page to the user. The user browsr downloads and executes the downloaded document and rendering the components, displaying the webpage.
+2. Client-side rendering happens on client's browser. When a user request a webpage to the server. The server sends the html,css and JS of the page to the user. The user browsr downloads and executes the downloaded document and rendering the components, displaying the webpage.
 
 3. Server side rendering renders the web page directly in the server before transfering it to the client. 
 
