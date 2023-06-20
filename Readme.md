@@ -45,3 +45,25 @@ Next.js has three choices for selecting how to fetch data. They are:
   iii. **Incremental-Static Generation (ISR):** (High Sr for short). Instead of using a cache, it uses '{next: { revalidate:10}}'. It uses both the functionality of SSR and SSG to create dynamic content in static site. You can specify the certain data to be statically fetched at build time while defining the revalidation time interval. So, the data will be cached refreshed in the given revalidation time so that we  always get new data.![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/9ee28458-0088-48ff-9c83-c60ba3115dc6)
 
 
+***Next.js API Endpoints:***
+Next.js allows application to be full stack. Using the same file based routing system, Next.js allows us to handle HTTP requests and develop backend functionality without requiring an external server.
+There are two different ways for route handlers. 
+1 -> create a file based route handlers right behind the api folder within the app directory -> app > api > route.js
+2 -> create a direct route handler within the app directory ->  app > route.js. This approach is not good because it may interefere with other component pages while implementing routing.
+So all the backend function logic and API endpoints are kept using 1st approach. 
+To create an API backend route -> create users folder under app > api > users > route.js and it accepts the below code:
+![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/d4049ac2-d0ec-4ac3-bacf-5b444a703248)
+When compared to express.js and next.js in backend function:
+***Express.js***:
+![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/73ba0c0a-7182-4956-8d08-b7709616e2fc)
+***Next.js***:
+![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/5aa9635c-945f-4eab-bd2f-b123fa7d3582)
+
+***How to improve SEO in Next.js app:***
+There are two types of metadata: Static and Dynamic
+Static Metadata -> ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/68ac7286-c738-49f7-860d-0f30145f9781)
+
+Dynamic Metadata -> ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/20abb679-e27c-45ee-a3eb-e62387cb968c)
+
+
+Next.js Docs: https://nextjs.org/docs
