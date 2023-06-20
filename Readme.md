@@ -1,9 +1,9 @@
-**NEXT.JS**
+#NEXT.JS
 
 1. Next.js simplifies the development process
 2. Optimizes the web app through priary features.
 
-*Benefits*:
+***Benefits*:**
 1. React does client side rendering while Next.js does server side rendering. Next.js also has options in which we can control on either client side or server side rendering.
 
 2. Client-side rendering happens on client's browser. When a user request a webpage to the server. The server sends the html,css and JS of the page to the user. The user browsr downloads and executes the downloaded document and rendering the components, displaying the webpage.
@@ -25,8 +25,7 @@ Moving from react+express+webpack to next.js resulted in removing 20000+ lines o
 
 10. Next.JS is fundamentally built on top of react. It is just an extenson of react.
 
-
-*How to create routing?*
+***How to create routing?***
 1. Routing is created in file-based. So, under the app folder, if you create a newpages folder and inside that folder page.js then the routing will be localhost:3000/newpages. We can created nested routing too
 2. If you want to create dynamic routing, say :postId, then this is how it must be created -> app > newpages > [postId] >page1.js, where the dynamic routing must have  '[]' brackets.
 3. You can create the layout navigation (navigating to the top page) and loading style under the componenet/routing folder.
@@ -34,8 +33,9 @@ Moving from react+express+webpack to next.js resulted in removing 20000+ lines o
 *Error Handling in Next.js:*
 1. Error handling is simple. Just create an error page and place it in wherever the routing folder you want to keep it in.
 
-*Data Fetching:*
+***Data Fetching:***
 1. Next.js has three choices for selecting how to fetch data. They are:
+  
   i. **Server-Side-Rendering (SSR):** Dynamic server-rendered data. It is fetched fresh on each request with SSR each request to the server triggers a new rendering cycle and data fetch ensuring the content is always upto date. Consider a page.js file with page react function. It is an sync function in which it fetches data with params(argument). Here we are using '{cache: 'no-store'}. It is a dynamic page in which we get the ID through params. With the 'cache: no-store', it means 'Hey! dont store it! Simply display the body and the title of the fetched post'. This ensures that it refetches it every single time making it as server-side rendered.![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/def3070a-ca44-4acb-8e82-e47c62b59135)
 
 
