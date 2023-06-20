@@ -53,6 +53,7 @@ There are two different ways for route handlers.
 So all the backend function logic and API endpoints are kept using 1st approach. 
 To create an API backend route -> create users folder under app > api > users > route.js and it accepts the below code:
 ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/d4049ac2-d0ec-4ac3-bacf-5b444a703248)
+
 When compared to express.js and next.js in backend function:
 
 ***Express.js***:
