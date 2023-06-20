@@ -1,4 +1,4 @@
-#NEXT.JS
+# NEXT.JS
 
 1. Next.js simplifies the development process
 2. Optimizes the web app through priary features.
@@ -30,11 +30,11 @@ Moving from react+express+webpack to next.js resulted in removing 20000+ lines o
 2. If you want to create dynamic routing, say :postId, then this is how it must be created -> app > newpages > [postId] >page1.js, where the dynamic routing must have  '[]' brackets.
 3. You can create the layout navigation (navigating to the top page) and loading style under the componenet/routing folder.
 
-*Error Handling in Next.js:*
+***Error Handling in Next.js:***
 1. Error handling is simple. Just create an error page and place it in wherever the routing folder you want to keep it in.
 
 ***Data Fetching:***
-1. Next.js has three choices for selecting how to fetch data. They are:
+Next.js has three choices for selecting how to fetch data. They are:
   
   i. **Server-Side-Rendering (SSR):** Dynamic server-rendered data. It is fetched fresh on each request with SSR each request to the server triggers a new rendering cycle and data fetch ensuring the content is always upto date. Consider a page.js file with page react function. It is an sync function in which it fetches data with params(argument). Here we are using '{cache: 'no-store'}. It is a dynamic page in which we get the ID through params. With the 'cache: no-store', it means 'Hey! dont store it! Simply display the body and the title of the fetched post'. This ensures that it refetches it every single time making it as server-side rendered.![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/def3070a-ca44-4acb-8e82-e47c62b59135)
 
@@ -44,4 +44,4 @@ Moving from react+express+webpack to next.js resulted in removing 20000+ lines o
 
   iii. **Incremental-Static Generation (ISR):** (High Sr for short). Instead of using a cache, it uses '{next: { revalidate:10}}'. It uses both the functionality of SSR and SSG to create dynamic content in static site. You can specify the certain data to be statically fetched at build time while defining the revalidation time interval. So, the data will be cached refreshed in the given revalidation time so that we  always get new data.![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/9ee28458-0088-48ff-9c83-c60ba3115dc6)
 
-2. 
+
