@@ -54,9 +54,13 @@ So all the backend function logic and API endpoints are kept using 1st approach.
 To create an API backend route -> create users folder under app > api > users > route.js and it accepts the below code:
 ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/d4049ac2-d0ec-4ac3-bacf-5b444a703248)
 When compared to express.js and next.js in backend function:
+
 ***Express.js***:
+
 ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/73ba0c0a-7182-4956-8d08-b7709616e2fc)
+
 ***Next.js***:
+
 ![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/5aa9635c-945f-4eab-bd2f-b123fa7d3582)
 
 ***How to improve SEO in Next.js app:***
