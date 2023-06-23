@@ -26,14 +26,17 @@ Moving from react+express+webpack to next.js resulted in removing 20000+ lines o
 10. Next.JS is fundamentally built on top of react. It is just an extenson of react.
 
 ***How to create routing?***
+
 1. Routing is created in file-based. So, under the app folder, if you create a newpages folder and inside that folder page.js then the routing will be localhost:3000/newpages. We can created nested routing too
 2. If you want to create dynamic routing, say :postId, then this is how it must be created -> app > newpages > [postId] >page1.js, where the dynamic routing must have  '[]' brackets.
 3. You can create the layout navigation (navigating to the top page) and loading style under the componenet/routing folder.
 
 ***Error Handling in Next.js:***
+
 1. Error handling is simple. Just create an error page and place it in wherever the routing folder you want to keep it in.
 
 ***Data Fetching:***
+
 Next.js has three choices for selecting how to fetch data. They are:
   
   i. **Server-Side-Rendering (SSR):** Dynamic server-rendered data. It is fetched fresh on each request with SSR each request to the server triggers a new rendering cycle and data fetch ensuring the content is always upto date. Consider a page.js file with page react function. It is an sync function in which it fetches data with params(argument). Here we are using '{cache: 'no-store'}. It is a dynamic page in which we get the ID through params. With the 'cache: no-store', it means 'Hey! dont store it! Simply display the body and the title of the fetched post'. This ensures that it refetches it every single time making it as server-side rendered.![image](https://github.com/Thaarik/NextJS-Learning/assets/52432079/def3070a-ca44-4acb-8e82-e47c62b59135)
@@ -46,6 +49,7 @@ Next.js has three choices for selecting how to fetch data. They are:
 
 
 ***Next.js API Endpoints:***
+
 Next.js allows application to be full stack. Using the same file based routing system, Next.js allows us to handle HTTP requests and develop backend functionality without requiring an external server.
 There are two different ways for route handlers. 
 1 -> create a file based route handlers right behind the api folder within the app directory -> app > api > route.js
